@@ -1,0 +1,63 @@
+New PySeek Logo
+
+HOME
+COOL PYTHON PROGRAMS
+WISH HAPPY BIRTHDAY USING PYTHON PROGRAMS
+Wish Happy Birthday using Python Programs
+Subhankar RakshitSUBHANKAR RAKSHIT21 OCTOBER 2021COOL PYTHON PROGRAMS
+A 'Happy Birthday' text surrounded by colorful graphics, with a Python logo displayed in the top right corner.
+Table of Contents
+Introduction
+Happy Birthday Program 1
+Code
+Explanation of the above Program
+Output
+Happy Birthday Program 2
+Setting up the Environments
+Install pyfiglet
+Install termcolor
+Download `fonts.txt` file
+Code
+Output
+Summary
+Introduction
+Birthday is one of the happiest days in the life of every human being. Everyone hopes that his/her loved ones will greet him/her uniquely on this day. Some give a sudden surprise, and some people wish by eye-catching gifts. But these are common modes of expression, right? As a Python Programmer, a creative idea sparked in my mind: What if we could extend our well-wishes through a Python program, adding a touch of uniqueness to birthday celebrations?
+
+In this Python tutorial, I will show how you can wish someone Happy Birthday using Python Programs. We’ll explore two distinct approaches to developing these programs.
+
+The first program is pretty simple and requires no additional installations. Just run the script, and you can congratulate someone on their special day. To stop the program, you need to press ctrl+C.
+
+The second program, however, introduces a more intriguing element. Here, we will utilize the pyfiglet and termcolor modules to create a unique Python program that distinctively expresses Happy Birthday. This tutorial will walk you through both methods.
+
+So, without further ado, let’s embark on this coding journey.
+
+Happy Birthday Program 1
+Code
+import time
+from random import randint
+
+for i in range(1,85):
+    print('')
+ 
+space = ''
+for i in range(1,1000):
+    count = randint(1, 100)
+    while(count > 0):
+        space += ' '
+        count -= 1
+    if(i%10==0):
+        print(space + '🎂Happy Birthday!')
+    elif(i%9 == 0):
+        print(space + "🎂")
+    elif(i%5==0):
+        print(space +"💛")
+    elif(i%8==0):
+        print(space + "🎉")
+    elif(i%7==0):
+        print(space + "🍫")
+    elif(i%6==0):
+        print(space + "Happy Birthday!💖")
+    else:
+        print(space + "🔸")
+    space = ''
+    time.sleep(0.2)
