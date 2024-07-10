@@ -1,4 +1,4 @@
 https://Hbdd.github.oi
 https://manishbarikmb.github.io/
 
-https://adityarajveerrr.github.oi
+https://Rajver.github.oi
